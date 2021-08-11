@@ -6,6 +6,7 @@ pipeline {
         stage('Docker') {
             steps {
                 sh 'sh apt install docker.io'
+                
             }
         }
         stage('Clean') {
