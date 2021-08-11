@@ -3,6 +3,11 @@ pipeline {
     agent any
 
     stages {
+        stage('Docker') {
+            steps {
+                sh 'sh sudo apt-get docker'
+            }
+        }
         stage('Clean') {
             steps {
                 sh 'sh clean.sh'
